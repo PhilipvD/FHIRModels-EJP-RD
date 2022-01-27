@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "StudyStatusCodes",
+  "id": "ejprd-studystatus-codes",
+  "title": "EJP RD CDE Study Status Codes Value Set",
+  "description": "Study status codes for a patient.",
+  "version": "0.1.0",
+  "url": "http://hl7.org/fhir/us/example/ValueSet/ejprd-studystatus-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "https://semanticscience.org/resource",
+        "concept": [
+          {
+            "code": "SIO:010059",
+            "display": "dead"
+          },
+          {
+            "code": "SIO:010058",
+            "display": "alive"
+          }
+        ]
+      },
+      {
+        "system": "http://ncithesaurus-stage.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C70740",
+            "display": "Subject Lost to Follow Up"
+          },
+          {
+            "code": "C124784",
+            "display": "Refusal to Participate"
+          }
+        ]
+      }
+    ]
+  }
+}

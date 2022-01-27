@@ -1,0 +1,76 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.ejprd.cde",
+  "url": "http://hl7.org/fhir/us/example/ImplementationGuide/fhir.ejprd.cde",
+  "version": "0.1.0",
+  "name": "FHIRModelCDE",
+  "status": "draft",
+  "packageId": "fhir.ejprd.cde",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/ejprd-cde-patient"
+        },
+        "name": "EJP-RD CDE Patient",
+        "description": "FHIR Patient profile for the Common Data Elements model of the EJP RD.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ejprd-cde-birthsex"
+        },
+        "name": "EJP RD CDE Birth Sex Extension",
+        "description": "A code classifying the person's sex assigned at birth.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ejprd-cde-studystatus"
+        },
+        "name": "EJP RD CDE Study Status Extension",
+        "description": "A code classifying the patient's status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ejprd-birthsex-codes"
+        },
+        "name": "EJP RD CDE Sex at Birth Codes Value Set",
+        "description": "NCIt sex at birth codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ejprd-studystatus-codes"
+        },
+        "name": "EJP RD CDE Study Status Codes Value Set",
+        "description": "Study status codes for a patient.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": []
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-history",
+        "value": "http://hl7.org/fhir/us/example/history.html"
+      }
+    ]
+  }
+}

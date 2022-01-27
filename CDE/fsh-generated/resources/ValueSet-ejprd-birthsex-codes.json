@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BirthSexCodes",
+  "id": "ejprd-birthsex-codes",
+  "title": "EJP RD CDE Sex at Birth Codes Value Set",
+  "description": "NCIt sex at birth codes.",
+  "version": "0.1.0",
+  "url": "http://hl7.org/fhir/us/example/ValueSet/ejprd-birthsex-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncithesaurus-stage.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C16576",
+            "display": "Female"
+          },
+          {
+            "code": "C20197",
+            "display": "Male"
+          },
+          {
+            "code": "C124294",
+            "display": "Undetermined"
+          },
+          {
+            "code": "C17998",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}
