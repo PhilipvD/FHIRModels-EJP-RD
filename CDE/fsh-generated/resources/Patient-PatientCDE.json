@@ -1,0 +1,38 @@
+{
+  "resourceType": "Patient",
+  "id": "PatientCDE",
+  "meta": {
+    "profile": [
+      "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-birthsex",
+      "valueCode": "C16576"
+    },
+    {
+      "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-studystatus",
+      "valueCode": "SIO:010059"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-disability",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "C3891",
+            "system": "http://ncithesaurus-stage.nci.nih.gov",
+            "display": "Color Blindness"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "value": "EUPID123"
+    }
+  ],
+  "birthDate": "1960-05-20",
+  "deceased[x]": "2021-02-07T13:28:17.239+02:00"
+}

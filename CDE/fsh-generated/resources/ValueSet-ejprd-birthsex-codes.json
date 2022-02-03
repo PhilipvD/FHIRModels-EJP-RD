@@ -6,7 +6,7 @@
   "title": "EJP RD CDE Sex at Birth Codes Value Set",
   "description": "NCIt sex at birth codes.",
   "version": "0.1.0",
-  "url": "http://hl7.org/fhir/us/example/ValueSet/ejprd-birthsex-codes",
+  "url": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-birthsex-codes",
   "compose": {
     "include": [
       {

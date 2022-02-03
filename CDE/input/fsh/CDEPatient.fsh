@@ -10,9 +10,10 @@ Description:    "FHIR Patient profile for the Common Data Elements model of the 
 // Cardinalities used elements
 * identifier 1..1 // CDE model element: Pseudonym.identifier
 * birthDate 1..1 // CDE model element: Personal information.Birth date
-* deceased[x] 1..1 // CDE model element: Patient status.Date of death 
+* deceased[x] 0..1 // CDE model element: Patient status.Date of death 
 * extension contains EJPBirthSexExtension named BirthSex 1..1 // CDE model element: Personal information.sex
 * extension contains EJPStudyStatusExtension named StudyStatus 1..1 // CDE model element: Patient status.status
+* extension contains http://hl7.org/fhir/StructureDefinition/patient-disability named disability 1..1
 
 // Remove unused elements
 * active 0..0

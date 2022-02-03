@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "fhir.ejprd.cde",
-  "url": "http://hl7.org/fhir/us/example/ImplementationGuide/fhir.ejprd.cde",
+  "url": "https://www.ejprarediseases.org/cde/ImplementationGuide/fhir.ejprd.cde",
   "version": "0.1.0",
   "name": "FHIRModelCDE",
   "status": "draft",
@@ -11,6 +11,14 @@
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/ejprd-cde-encounter"
+        },
+        "name": "EJP-RD CDE Encounter",
+        "description": "FHIR Encounter profile for the Common Data Elements model of the EJP RD.",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/ejprd-cde-patient"
@@ -50,6 +58,20 @@
         "name": "EJP RD CDE Study Status Codes Value Set",
         "description": "Study status codes for a patient.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/EncounterCDE"
+        },
+        "name": "Example Encounter",
+        "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-encounter"
+      },
+      {
+        "reference": {
+          "reference": "Patient/PatientCDE"
+        },
+        "name": "Joe Average",
+        "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient"
       }
     ],
     "page": {
@@ -66,10 +88,6 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
-      },
-      {
-        "code": "path-history",
-        "value": "http://hl7.org/fhir/us/example/history.html"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ejprd-cde-birthsex",
-  "url": "http://hl7.org/fhir/us/example/StructureDefinition/ejprd-cde-birthsex",
+  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-birthsex",
   "version": "0.1.0",
   "name": "EJPBirthSexExtension",
   "title": "EJP RD CDE Birth Sex Extension",
@@ -42,7 +42,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/us/example/StructureDefinition/ejprd-cde-birthsex"
+        "fixedUri": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-birthsex"
       },
       {
         "id": "Extension.value[x]",
@@ -70,7 +70,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/us/example/ValueSet/ejprd-birthsex-codes"
+          "valueSet": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-birthsex-codes"
         }
       }
     ]

@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://hl7.org/fhir/us/example/StructureDefinition/ejprd-cde-patient",
+  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient",
   "version": "0.1.0",
   "name": "CDEPatient",
   "title": "EJP-RD CDE Patient",
@@ -65,7 +65,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 2
+        "min": 3
       },
       {
         "id": "Patient.extension:BirthSex",
@@ -77,7 +77,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/example/StructureDefinition/ejprd-cde-birthsex"
+              "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-birthsex"
             ]
           }
         ]
@@ -92,7 +92,22 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/us/example/StructureDefinition/ejprd-cde-studystatus"
+              "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-studystatus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:disability",
+        "path": "Patient.extension",
+        "sliceName": "disability",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-disability"
             ]
           }
         ]
@@ -131,7 +146,6 @@
       {
         "id": "Patient.deceased[x]",
         "path": "Patient.deceased[x]",
-        "min": 1,
         "type": [
           {
             "code": "dateTime"

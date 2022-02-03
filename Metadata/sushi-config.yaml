@@ -1,6 +1,6 @@
-id: fhir.us.mimiced
-canonical: http://hl7.org/fhir/us/example
-name: MIMIC-ED-FHIR
+id: fhir.ejprd.metadata
+canonical: https://www.ejprarediseases.org/metadata
+name: FHIRModelMetadata
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
