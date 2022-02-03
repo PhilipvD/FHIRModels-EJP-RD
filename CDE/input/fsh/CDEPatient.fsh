@@ -46,7 +46,7 @@ Id:   ejprd-cde-studystatus
 Title:  "EJP RD CDE Study Status Extension"
 Description: "A code classifying the patient's status."
 * value[x] only code
-* valueCode from BirthSexCodes 
+* valueCode from StudyStatusCodes 
 
 // Value sets
 ValueSet: BirthSexCodes

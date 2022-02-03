@@ -70,7 +70,7 @@
         "reference": {
           "reference": "Patient/PatientCDE"
         },
-        "name": "Joe Average",
+        "name": "Example Patient",
         "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient"
       }
     ],
