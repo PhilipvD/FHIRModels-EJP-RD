@@ -16,6 +16,11 @@
   "code": {
     "coding": [
       {
+        "code": "Orphanet_454",
+        "system": "http://www.orpha.net/ORDO/",
+        "display": "Acquired ichthyosis"
+      },
+      {
         "code": "HGNC:11777",
         "system": "http://www.genenames.org",
         "display": "TGM1"

@@ -15,7 +15,7 @@ Description:    "FHIR Condition profile for the Common Data Elements model of th
 * subject 1..1 // Reference(CDEPatient)
 * onset[x] 1..1 // CDE model element: Disease history - Age at onset
 * recordedDate 1..1 // CDE model element: Disease history - Age at diagnosis (no age, so infer age using birth date)
-* code 1.. // CDE model element: Diagnosis (rare disease and genetic)
+* code 1..1 // CDE model element: Diagnosis (rare disease and genetic)
 
 // Cardinalities unused elements
 * identifier 0..0
@@ -37,17 +37,17 @@ Description:    "FHIR Condition profile for the Common Data Elements model of th
 * onset[x] only Age
 
 // Slicing logic of code (diagnosis and genetic diagnosis code)
-* code ^slicing.discriminator.type = #value
-* code ^slicing.discriminator.path = "code"
-* code ^slicing.rules = #open
-* code ^slicing.description = "Slice based on the code pattern"
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "code.coding"
+* code.coding ^slicing.rules = #open
+* code.coding ^slicing.description = "Slice based on the code pattern"
 
 // Define slices
-* code contains
-       diagnosisCode 0..1 and
-       geneticDiagnosisCode 0..1
-* code[diagnosisCode] from RareDiseaseDiagnosisCodes
-* code[geneticDiagnosisCode] from GeneticDiagnosisCodes
+* code.coding contains
+       diagnosisCode 1..1 and
+       geneticDiagnosisCode 1..1
+* code.coding[diagnosisCode] from RareDiseaseDiagnosisCodes
+* code.coding[geneticDiagnosisCode] from GeneticDiagnosisCodes
 
 // Value set for rare disease diagnosis codes
 ValueSet: RareDiseaseDiagnosisCodes
