@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "GeneticDiagnosisCodes",
+  "id": "ejprd-genetic-diagnosis-codes",
+  "title": "EJP RD CDE Genetic Diagnosis Codes Value Set",
+  "description": "Codes for the genetic diagnosis from relevant code systems.",
+  "version": "0.1.0",
+  "url": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-genetic-diagnosis-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://varnomen.hgvs.org"
+      },
+      {
+        "system": "http://www.genenames.org"
+      },
+      {
+        "system": "http://www.omim.org"
+      },
+      {
+        "system": "http://ncithesaurus-stage.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C113725",
+            "display": "Undiagnosed"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RareDiseaseDiagnosisCodes",
+  "id": "ejprd-diagnosis-codes",
+  "title": "EJP RD CDE Rare Disease Diagnosis Codes Value Set",
+  "description": "Codes for the diagnosis of a rare disease from relevant code systems.",
+  "version": "0.1.0",
+  "url": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-diagnosis-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.orpha.net/ORDO/"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10"
+      },
+      {
+        "system": "http://ncithesaurus-stage.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C113725",
+            "display": "Undiagnosed"
+          }
+        ]
+      }
+    ]
+  }
+}

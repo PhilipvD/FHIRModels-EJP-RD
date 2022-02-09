@@ -13,6 +13,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/ejprd-cde-condition"
+        },
+        "name": "EJP-RD CDE Condition",
+        "description": "FHIR Condition profile for the Common Data Elements model of the EJP RD.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ejprd-cde-encounter"
         },
         "name": "EJP-RD CDE Encounter",
@@ -53,11 +61,34 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ejprd-genetic-diagnosis-codes"
+        },
+        "name": "EJP RD CDE Genetic Diagnosis Codes Value Set",
+        "description": "Codes for the genetic diagnosis from relevant code systems.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ejprd-diagnosis-codes"
+        },
+        "name": "EJP RD CDE Rare Disease Diagnosis Codes Value Set",
+        "description": "Codes for the diagnosis of a rare disease from relevant code systems.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ejprd-studystatus-codes"
         },
         "name": "EJP RD CDE Study Status Codes Value Set",
         "description": "Study status codes for a patient.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/ConditionCDE"
+        },
+        "name": "Example Condition",
+        "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-condition"
       },
       {
         "reference": {

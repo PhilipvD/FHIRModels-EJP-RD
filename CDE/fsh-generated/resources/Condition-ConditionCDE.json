@@ -1,0 +1,25 @@
+{
+  "resourceType": "Condition",
+  "id": "ConditionCDE",
+  "meta": {
+    "profile": [
+      "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-condition"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PatientCDE"
+  },
+  "onset[x]": {
+    "value": 46
+  },
+  "recordedDate": "2021-01-20",
+  "code": {
+    "coding": [
+      {
+        "code": "HGNC:11777",
+        "system": "http://www.genenames.org",
+        "display": "TGM1"
+      }
+    ]
+  }
+}
