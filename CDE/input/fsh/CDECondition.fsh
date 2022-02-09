@@ -1,3 +1,10 @@
+Alias: $ORDO = http://www.orpha.net/ORDO/
+Alias: $ICD-10 = http://hl7.org/fhir/sid/icd-10
+Alias: $ICD-9-CM = http://hl7.org/fhir/sid/icd-9-cm
+Alias: $HGVS = http://varnomen.hgvs.org
+Alias: $HGNC = http://www.genenames.org
+Alias: $OMIM = http://www.omim.org
+
 Profile:        CDECondition
 Parent:         Condition
 Id:             ejprd-cde-condition
@@ -8,7 +15,7 @@ Description:    "FHIR Condition profile for the Common Data Elements model of th
 * subject 1..1 // Reference(CDEPatient)
 * onset[x] 1..1 // CDE model element: Disease history - Age at onset
 * recordedDate 1..1 // CDE model element: Disease history - Age at diagnosis (no age, so infer age using birth date)
-* code 1..1 // 
+* code 1.. // CDE model element: Diagnosis (rare disease and genetic)
 
 // Cardinalities unused elements
 * identifier 0..0
@@ -18,7 +25,6 @@ Description:    "FHIR Condition profile for the Common Data Elements model of th
 * severity 0..0
 * bodySite 0..0
 * abatement[x] 0..0
-* recordedDate 0..0
 * recorder 0..0
 * asserter 0..0
 * stage 0..0
@@ -30,9 +36,6 @@ Description:    "FHIR Condition profile for the Common Data Elements model of th
 * subject only Reference(CDEPatient)
 * onset[x] only Age
 
-
-* code from DiagnosisCodesICD
-
 // Slicing logic of code (diagnosis and genetic diagnosis code)
 * code ^slicing.discriminator.type = #value
 * code ^slicing.discriminator.path = "code"
@@ -42,8 +45,26 @@ Description:    "FHIR Condition profile for the Common Data Elements model of th
 // Define slices
 * code contains
        diagnosisCode 0..1 and
-       geneticDiagnosisCode 0..1 and
-       undiagnosedCode 0..1
-* code[diagnosisCode] from 
-* code[geneticDiagnosisCode] from 
-* code[undiagnosedCode] only 
+       geneticDiagnosisCode 0..1
+* code[diagnosisCode] from RareDiseaseDiagnosisCodes
+* code[geneticDiagnosisCode] from GeneticDiagnosisCodes
+
+// Value set for rare disease diagnosis codes
+ValueSet: RareDiseaseDiagnosisCodes
+Id: ejprd-diagnosis-codes
+Title: "EJP RD CDE Rare Disease Diagnosis Codes Value Set"
+Description: "Codes for the diagnosis of a rare disease from relevant code systems."
+* include codes from system $ORDO
+* include codes from system $ICD-9-CM
+* include codes from system $ICD-10
+* include $NCIT#C113725 "Undiagnosed" // Include undiagnosed code from NCIt
+
+// Value set for genetic diagnosis codes
+ValueSet: GeneticDiagnosisCodes
+Id: ejprd-genetic-diagnosis-codes
+Title: "EJP RD CDE Genetic Diagnosis Codes Value Set"
+Description: "Codes for the genetic diagnosis from relevant code systems."
+* include codes from system $HGVS
+* include codes from system $HGNC
+* include codes from system $OMIM
+* include $NCIT#C113725 "Undiagnosed" // Include undiagnosed code from NCIt
