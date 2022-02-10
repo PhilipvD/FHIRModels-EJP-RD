@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ConsentCodes",
+  "id": "ejprd-consent-codes",
+  "title": "EJP RD CDE Consent Codes Value Set",
+  "description": "Consent answer options codes for answering the 'research' part of the CDE model.",
+  "version": "0.1.0",
+  "url": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-consent-codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://purl.obolibrary.org/obo/DUO_",
+        "concept": [
+          {
+            "code": "0000001",
+            "display": "data use permission"
+          },
+          {
+            "code": "0000042",
+            "display": "general research use"
+          },
+          {
+            "code": "0000006",
+            "display": "health or medical or biomedical research"
+          },
+          {
+            "code": "0000007",
+            "display": "disease specific research"
+          },
+          {
+            "code": "0000004",
+            "display": "no restriction"
+          },
+          {
+            "code": "0000011",
+            "display": "population origins or ancestry research only"
+          }
+        ]
+      }
+    ]
+  }
+}

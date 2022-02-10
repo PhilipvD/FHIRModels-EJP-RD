@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ejprd-cde-questionnaireresponse",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-questionnaireresponse",
+  "version": "0.1.0",
+  "name": "CDEQuestionnaireResponse",
+  "title": "EJP-RD CDE QuestionnaireResponse",
+  "status": "active",
+  "description": "FHIR QuestionnaireResponse profile for the Common Data Elements model of the EJP RD.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse",
+        "path": "QuestionnaireResponse"
+      }
+    ]
+  }
+}

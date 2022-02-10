@@ -37,6 +37,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ejprd-cde-questionnaire"
+        },
+        "name": "EJP-RD CDE Questionnaire",
+        "description": "FHIR Questionnaire profile for the Common Data Elements model of the EJP RD.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ejprd-cde-questionnaireresponse"
+        },
+        "name": "EJP-RD CDE QuestionnaireResponse",
+        "description": "FHIR QuestionnaireResponse profile for the Common Data Elements model of the EJP RD.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ejprd-cde-birthsex"
         },
         "name": "EJP RD CDE Birth Sex Extension",
@@ -57,6 +73,14 @@
         },
         "name": "EJP RD CDE Sex at Birth Codes Value Set",
         "description": "NCIt sex at birth codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ejprd-consent-codes"
+        },
+        "name": "EJP RD CDE Consent Codes Value Set",
+        "description": "Consent answer options codes for answering the 'research' part of the CDE model.",
         "exampleBoolean": false
       },
       {
@@ -103,6 +127,13 @@
         },
         "name": "Example Patient",
         "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/QuestionnaireCDE"
+        },
+        "name": "CDE Questionnaire definition",
+        "exampleBoolean": false
       }
     ],
     "page": {

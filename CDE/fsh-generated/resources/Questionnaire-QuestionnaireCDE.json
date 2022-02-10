@@ -1,0 +1,76 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "QuestionnaireCDE",
+  "meta": {
+    "profile": [
+      "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-questionnaire"
+    ]
+  },
+  "url": "https://www.ejprarediseases.org/cde/Questionnaire/QuestionnaireCDE",
+  "status": "active",
+  "subjectType": [
+    "Patient"
+  ],
+  "item": [
+    {
+      "type": "choice",
+      "required": true,
+      "linkId": "agreement-to-be-contacted",
+      "code": [
+        {
+          "code": "0000810",
+          "system": "http://purl.obolibrary.org/obo/OBI_",
+          "display": "informed consent process"
+        }
+      ],
+      "text": "Agreement to be contacted for research purposes",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "0000488",
+            "system": "http://purl.obolibrary.org/obo/OBIB_",
+            "display": "willingness to be contacted for a research study"
+          }
+        },
+        {
+          "valueString": "NO"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "required": true,
+      "linkId": "reuse-consent",
+      "code": [
+        {
+          "code": "0000001",
+          "system": "http://purl.obolibrary.org/obo/ICO_",
+          "display": "informed consent form"
+        }
+      ],
+      "text": "Consent to the reuse of data",
+      "answerValueSet": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-consent-codes"
+    },
+    {
+      "type": "choice",
+      "required": true,
+      "linkId": "biological-sample",
+      "code": [
+        {
+          "code": "0000659",
+          "system": "http://purl.obolibrary.org/obo/OBI_",
+          "display": "specimen collection process"
+        }
+      ],
+      "text": "Biological sample",
+      "answerOption": [
+        {
+          "valueString": "YES"
+        },
+        {
+          "valueString": "NO"
+        }
+      ]
+    }
+  ]
+}

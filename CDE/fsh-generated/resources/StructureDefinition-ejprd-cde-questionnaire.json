@@ -1,0 +1,96 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ejprd-cde-questionnaire",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-questionnaire",
+  "version": "0.1.0",
+  "name": "CDEQuestionnaire",
+  "title": "EJP-RD CDE Questionnaire",
+  "status": "active",
+  "description": "FHIR Questionnaire profile for the Common Data Elements model of the EJP RD.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Questionnaire",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Questionnaire.status",
+        "path": "Questionnaire.status",
+        "patternCode": "active"
+      },
+      {
+        "id": "Questionnaire.subjectType",
+        "path": "Questionnaire.subjectType",
+        "min": 1,
+        "max": "1",
+        "patternCode": "Patient"
+      },
+      {
+        "id": "Questionnaire.item",
+        "path": "Questionnaire.item",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.item.code",
+        "path": "Questionnaire.item.code",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Questionnaire.item.text",
+        "path": "Questionnaire.item.text",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.item.type",
+        "path": "Questionnaire.item.type",
+        "patternCode": "choice"
+      },
+      {
+        "id": "Questionnaire.item.required",
+        "path": "Questionnaire.item.required",
+        "min": 1,
+        "patternBoolean": true
+      }
+    ]
+  }
+}
