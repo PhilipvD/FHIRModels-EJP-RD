@@ -86,10 +86,14 @@
         "patternCode": "choice"
       },
       {
+        "id": "Questionnaire.item.enableWhen",
+        "path": "Questionnaire.item.enableWhen",
+        "max": "1"
+      },
+      {
         "id": "Questionnaire.item.required",
         "path": "Questionnaire.item.required",
-        "min": 1,
-        "patternBoolean": true
+        "min": 1
       }
     ]
   }

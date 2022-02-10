@@ -14,7 +14,6 @@
   "item": [
     {
       "type": "choice",
-      "required": true,
       "linkId": "agreement-to-be-contacted",
       "code": [
         {
@@ -35,11 +34,11 @@
         {
           "valueString": "NO"
         }
-      ]
+      ],
+      "required": true
     },
     {
       "type": "choice",
-      "required": true,
       "linkId": "reuse-consent",
       "code": [
         {
@@ -49,11 +48,11 @@
         }
       ],
       "text": "Consent to the reuse of data",
-      "answerValueSet": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-consent-codes"
+      "answerValueSet": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-consent-codes",
+      "required": true
     },
     {
       "type": "choice",
-      "required": true,
       "linkId": "biological-sample",
       "code": [
         {
@@ -70,7 +69,36 @@
         {
           "valueString": "NO"
         }
-      ]
+      ],
+      "required": true
+    },
+    {
+      "type": "choice",
+      "linkId": "biobank-link",
+      "code": [
+        {
+          "code": "0000010",
+          "system": "http://purl.obolibrary.org/obo/OMIABIS_",
+          "display": "biobank organization"
+        }
+      ],
+      "text": "Link to a biobank",
+      "answerOption": [
+        {
+          "valueString": "YES"
+        },
+        {
+          "valueString": "NO"
+        }
+      ],
+      "enableWhen": [
+        {
+          "question": "biological-sample",
+          "operator": "exists",
+          "answerString": "YES"
+        }
+      ],
+      "required": false
     }
   ]
 }

@@ -2,6 +2,7 @@ Alias: $DUO = http://purl.obolibrary.org/obo/DUO_
 Alias: $OBI = http://purl.obolibrary.org/obo/OBI_
 Alias: $ICO = http://purl.obolibrary.org/obo/ICO_
 Alias: $OBIB = http://purl.obolibrary.org/obo/OBIB_
+Alias: $OMIABIS = http://purl.obolibrary.org/obo/OMIABIS_
 
 Profile:        CDEQuestionnaire
 Parent:         Questionnaire
@@ -20,12 +21,12 @@ Description:    "FHIR Questionnaire profile for the Common Data Elements model o
 * item.required 1..1
 * item.answerValueSet 0..1
 * item.answerOption 0..
+* item.enableWhen 0..1
 
 // Further specification of elements
 * status = 	http://hl7.org/fhir/publication-status#active "Active" // Status: active (default element)
 * subjectType = http://hl7.org/fhir/resource-types#Patient "Patient" // The subject of a QuestionnaireResponse will always be a Patient resource
 * item.type = http://hl7.org/fhir/item-type#choice "Choice" // Answers are codes
-* item.required = true
 
 // Value sets
 ValueSet: ConsentCodes
