@@ -1,0 +1,56 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "QuestionnaireResponseCDE",
+  "meta": {
+    "profile": [
+      "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-questionnaireresponse"
+    ]
+  },
+  "questionnaire": "https://www.ejprarediseases.org/cde/Questionnaire/QuestionnaireCDE",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/PatientCDE"
+  },
+  "item": [
+    {
+      "linkId": "agreement-to-be-contacted",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "0000488",
+            "system": "http://purl.obolibrary.org/obo/OBIB_",
+            "display": "willingness to be contacted for a research study"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "reuse-consent",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "0000006",
+            "system": "http://purl.obolibrary.org/obo/DUO_",
+            "display": "health or medical or biomedical research"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "biological-sample",
+      "answer": [
+        {
+          "valueString": "YES"
+        }
+      ]
+    },
+    {
+      "linkId": "biobank-link",
+      "answer": [
+        {
+          "valueString": "YES"
+        }
+      ]
+    }
+  ]
+}

@@ -134,6 +134,13 @@
         },
         "name": "CDE Questionnaire definition",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/QuestionnaireResponseCDE"
+        },
+        "name": "Example QuestionnaireResponse",
+        "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-questionnaireresponse"
       }
     ],
     "page": {

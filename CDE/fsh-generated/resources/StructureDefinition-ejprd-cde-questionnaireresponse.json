@@ -43,8 +43,33 @@
   "differential": {
     "element": [
       {
-        "id": "QuestionnaireResponse",
-        "path": "QuestionnaireResponse"
+        "id": "QuestionnaireResponse.questionnaire",
+        "path": "QuestionnaireResponse.questionnaire",
+        "min": 1,
+        "patternCanonical": "https://www.ejprarediseases.org/cde/Questionnaire/QuestionnaireCDE"
+      },
+      {
+        "id": "QuestionnaireResponse.status",
+        "path": "QuestionnaireResponse.status",
+        "patternCode": "completed"
+      },
+      {
+        "id": "QuestionnaireResponse.subject",
+        "path": "QuestionnaireResponse.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.item",
+        "path": "QuestionnaireResponse.item",
+        "min": 1
       }
     ]
   }
