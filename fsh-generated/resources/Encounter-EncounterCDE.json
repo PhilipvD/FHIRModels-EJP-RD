@@ -21,6 +21,6 @@
     "end": "2020-01-20"
   },
   "subject": {
-    "reference": "https://www.ejprarediseases.org/cde/Patient/PatientCDE"
+    "reference": "Patient/PatientCDE"
   }
 }
