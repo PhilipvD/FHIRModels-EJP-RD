@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ejprd-cde-studystatus",
-  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-studystatus",
+  "url": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-studystatus",
   "version": "0.1.0",
   "name": "EJPStudyStatusExtension",
   "title": "EJP RD CDE Study Status Extension",
@@ -42,7 +42,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-studystatus"
+        "fixedUri": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-studystatus"
       },
       {
         "id": "Extension.value[x]",
@@ -70,7 +70,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-studystatus-codes"
+          "valueSet": "https://www.ejprarediseases.org//ValueSet/ejprd-studystatus-codes"
         }
       }
     ]

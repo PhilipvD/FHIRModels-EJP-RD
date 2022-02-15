@@ -6,7 +6,7 @@
   "title": "EJP RD CDE Rare Disease Diagnosis Codes Value Set",
   "description": "Codes for the diagnosis of a rare disease from relevant code systems.",
   "version": "0.1.0",
-  "url": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-diagnosis-codes",
+  "url": "https://www.ejprarediseases.org//ValueSet/ejprd-diagnosis-codes",
   "compose": {
     "include": [
       {

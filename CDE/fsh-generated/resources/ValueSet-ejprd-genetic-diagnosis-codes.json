@@ -6,7 +6,7 @@
   "title": "EJP RD CDE Genetic Diagnosis Codes Value Set",
   "description": "Codes for the genetic diagnosis from relevant code systems.",
   "version": "0.1.0",
-  "url": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-genetic-diagnosis-codes",
+  "url": "https://www.ejprarediseases.org//ValueSet/ejprd-genetic-diagnosis-codes",
   "compose": {
     "include": [
       {

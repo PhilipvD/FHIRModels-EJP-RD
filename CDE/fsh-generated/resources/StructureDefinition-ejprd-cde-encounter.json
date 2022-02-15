@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-encounter",
+  "url": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-encounter",
   "version": "0.1.0",
   "name": "CDEEncounter",
   "title": "EJP-RD CDE Encounter",
@@ -100,7 +100,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient"
+              "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-patient"
             ]
           }
         ]

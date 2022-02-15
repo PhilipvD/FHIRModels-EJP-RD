@@ -6,7 +6,7 @@
   "title": "EJP RD CDE Consent Codes Value Set",
   "description": "Consent answer options codes for answering the 'research' part of the CDE model.",
   "version": "0.1.0",
-  "url": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-consent-codes",
+  "url": "https://www.ejprarediseases.org//ValueSet/ejprd-consent-codes",
   "compose": {
     "include": [
       {

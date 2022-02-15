@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-questionnaireresponse",
+  "url": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-questionnaireresponse",
   "version": "0.1.0",
   "name": "CDEQuestionnaireResponse",
   "title": "EJP-RD CDE QuestionnaireResponse",
@@ -61,7 +61,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient"
+              "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-patient"
             ]
           }
         ]

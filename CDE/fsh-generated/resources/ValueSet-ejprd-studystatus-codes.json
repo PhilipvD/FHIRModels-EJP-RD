@@ -6,7 +6,7 @@
   "title": "EJP RD CDE Study Status Codes Value Set",
   "description": "Study status codes for a patient.",
   "version": "0.1.0",
-  "url": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-studystatus-codes",
+  "url": "https://www.ejprarediseases.org//ValueSet/ejprd-studystatus-codes",
   "compose": {
     "include": [
       {

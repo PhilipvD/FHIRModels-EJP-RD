@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-condition",
+  "url": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-condition",
   "version": "0.1.0",
   "name": "CDECondition",
   "title": "EJP-RD CDE Condition",
@@ -110,7 +110,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-diagnosis-codes"
+          "valueSet": "https://www.ejprarediseases.org//ValueSet/ejprd-diagnosis-codes"
         }
       },
       {
@@ -121,7 +121,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.ejprarediseases.org/cde/ValueSet/ejprd-genetic-diagnosis-codes"
+          "valueSet": "https://www.ejprarediseases.org//ValueSet/ejprd-genetic-diagnosis-codes"
         }
       },
       {
@@ -136,7 +136,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient"
+              "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-patient"
             ]
           }
         ]

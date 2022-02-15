@@ -6,4 +6,4 @@ Usage:  #example
 
 * identifier.value = "EUPID123"
 * period.end = 2020-01-20
-* subject = Reference(PatientCDE)
+* subject = Reference(https://www.ejprarediseases.org/cde/Patient/PatientCDE)

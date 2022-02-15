@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "fhir.ejprd.cde",
-  "url": "https://www.ejprarediseases.org/cde/ImplementationGuide/fhir.ejprd.cde",
+  "url": "https://www.ejprarediseases.org//ImplementationGuide/fhir.ejprd.cde",
   "version": "0.1.0",
   "name": "FHIRModelCDE",
   "status": "draft",
@@ -112,21 +112,21 @@
           "reference": "Condition/ConditionCDE"
         },
         "name": "Example Condition",
-        "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-condition"
+        "exampleCanonical": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-condition"
       },
       {
         "reference": {
           "reference": "Encounter/EncounterCDE"
         },
         "name": "Example Encounter",
-        "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-encounter"
+        "exampleCanonical": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-encounter"
       },
       {
         "reference": {
           "reference": "Patient/PatientCDE"
         },
         "name": "Example Patient",
-        "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient"
+        "exampleCanonical": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-patient"
       },
       {
         "reference": {
@@ -140,7 +140,7 @@
           "reference": "QuestionnaireResponse/QuestionnaireResponseCDE"
         },
         "name": "Example QuestionnaireResponse",
-        "exampleCanonical": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-questionnaireresponse"
+        "exampleCanonical": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-questionnaireresponse"
       }
     ],
     "page": {

@@ -1,5 +1,5 @@
 id: fhir.ejprd.cde
-canonical: https://www.ejprarediseases.org/cde
+canonical: https://www.ejprarediseases.org/
 name: FHIRModelCDE
 status: draft
 version: 0.1.0

@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-patient",
+  "url": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-patient",
   "version": "0.1.0",
   "name": "CDEPatient",
   "title": "EJP-RD CDE Patient",
@@ -77,7 +77,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-birthsex"
+              "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-birthsex"
             ]
           }
         ]
@@ -92,7 +92,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-studystatus"
+              "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-studystatus"
             ]
           }
         ]

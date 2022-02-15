@@ -11,7 +11,7 @@
       "valueCode": "business"
     }
   ],
-  "url": "https://www.ejprarediseases.org/cde/StructureDefinition/ejprd-cde-questionnaire",
+  "url": "https://www.ejprarediseases.org//StructureDefinition/ejprd-cde-questionnaire",
   "version": "0.1.0",
   "name": "CDEQuestionnaire",
   "title": "EJP-RD CDE Questionnaire",
