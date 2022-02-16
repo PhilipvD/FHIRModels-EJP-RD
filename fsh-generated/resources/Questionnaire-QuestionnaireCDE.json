@@ -32,7 +32,11 @@
           }
         },
         {
-          "valueString": "NO"
+          "valueCoding": {
+            "code": "C49487",
+            "system": "http://ncithesaurus-stage.nci.nih.gov",
+            "display": "No"
+          }
         }
       ],
       "required": true
@@ -64,10 +68,18 @@
       "text": "Biological sample",
       "answerOption": [
         {
-          "valueString": "YES"
+          "valueCoding": {
+            "code": "C49488",
+            "system": "http://ncithesaurus-stage.nci.nih.gov",
+            "display": "Yes"
+          }
         },
         {
-          "valueString": "NO"
+          "valueCoding": {
+            "code": "C49487",
+            "system": "http://ncithesaurus-stage.nci.nih.gov",
+            "display": "No"
+          }
         }
       ],
       "required": true
@@ -85,10 +97,18 @@
       "text": "Link to a biobank",
       "answerOption": [
         {
-          "valueString": "YES"
+          "valueCoding": {
+            "code": "C49488",
+            "system": "http://ncithesaurus-stage.nci.nih.gov",
+            "display": "Yes"
+          }
         },
         {
-          "valueString": "NO"
+          "valueCoding": {
+            "code": "C49487",
+            "system": "http://ncithesaurus-stage.nci.nih.gov",
+            "display": "No"
+          }
         }
       ],
       "enableWhen": [
