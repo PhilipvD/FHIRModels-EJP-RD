@@ -13,7 +13,7 @@ Usage:  #example
 * item[=].answer.valueCoding = $DUO#0000006 "health or medical or biomedical research"
 
 * item[+].linkId = "biological-sample"
-* item[=].answer.valueString = "YES"
+* item[=].answer.valueCoding = $NCIT#C49488 "Yes"
 
 * item[+].linkId = "biobank-link"
-* item[=].answer.valueString = "YES"
+* item[=].answer.valueCoding = $NCIT#C49488 "Yes"

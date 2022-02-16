@@ -40,7 +40,11 @@
       "linkId": "biological-sample",
       "answer": [
         {
-          "valueString": "YES"
+          "valueCoding": {
+            "code": "C49488",
+            "system": "http://ncithesaurus-stage.nci.nih.gov",
+            "display": "Yes"
+          }
         }
       ]
     },
@@ -48,7 +52,11 @@
       "linkId": "biobank-link",
       "answer": [
         {
-          "valueString": "YES"
+          "valueCoding": {
+            "code": "C49488",
+            "system": "http://ncithesaurus-stage.nci.nih.gov",
+            "display": "Yes"
+          }
         }
       ]
     }
