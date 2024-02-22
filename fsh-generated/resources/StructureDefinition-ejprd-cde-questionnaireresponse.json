@@ -43,6 +43,21 @@
   "differential": {
     "element": [
       {
+        "id": "QuestionnaireResponse.identifier",
+        "path": "QuestionnaireResponse.identifier",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.basedOn",
+        "path": "QuestionnaireResponse.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.partOf",
+        "path": "QuestionnaireResponse.partOf",
+        "max": "0"
+      },
+      {
         "id": "QuestionnaireResponse.questionnaire",
         "path": "QuestionnaireResponse.questionnaire",
         "min": 1,
@@ -65,6 +80,26 @@
             ]
           }
         ]
+      },
+      {
+        "id": "QuestionnaireResponse.encounter",
+        "path": "QuestionnaireResponse.encounter",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.authored",
+        "path": "QuestionnaireResponse.authored",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.author",
+        "path": "QuestionnaireResponse.author",
+        "max": "0"
+      },
+      {
+        "id": "QuestionnaireResponse.source",
+        "path": "QuestionnaireResponse.source",
+        "max": "0"
       },
       {
         "id": "QuestionnaireResponse.item",

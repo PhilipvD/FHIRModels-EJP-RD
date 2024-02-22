@@ -23,6 +23,28 @@ Description:    "FHIR Questionnaire profile for the Common Data Elements model o
 * item.answerOption 0..
 * item.enableWhen 0..1
 
+// Remove unused elements
+* url 0..0
+* identifier 0..0
+* version 0..0
+* name 0..0
+* title 0..0
+* derivedFrom 0..0
+* experimental 0..0
+* date 0..0
+* publisher 0..0
+* contact 0..0
+* description 0..0
+* useContext 0..0
+* jurisdiction 0..0
+* purpose 0..0
+* copyright 0..0
+* approvalDate 0..0
+* lastReviewDate 0..0
+* effectivePeriod 0..0
+* code 0..0
+
+
 // Further specification of elements
 * status = 	http://hl7.org/fhir/publication-status#active "Active" // Status: active (default element)
 * subjectType = http://hl7.org/fhir/resource-types#Patient "Patient" // The subject of a QuestionnaireResponse will always be a Patient resource

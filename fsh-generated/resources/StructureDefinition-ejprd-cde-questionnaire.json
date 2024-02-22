@@ -53,9 +53,44 @@
   "differential": {
     "element": [
       {
+        "id": "Questionnaire.url",
+        "path": "Questionnaire.url",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.identifier",
+        "path": "Questionnaire.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.version",
+        "path": "Questionnaire.version",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.name",
+        "path": "Questionnaire.name",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.title",
+        "path": "Questionnaire.title",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.derivedFrom",
+        "path": "Questionnaire.derivedFrom",
+        "max": "0"
+      },
+      {
         "id": "Questionnaire.status",
         "path": "Questionnaire.status",
         "patternCode": "active"
+      },
+      {
+        "id": "Questionnaire.experimental",
+        "path": "Questionnaire.experimental",
+        "max": "0"
       },
       {
         "id": "Questionnaire.subjectType",
@@ -63,6 +98,66 @@
         "min": 1,
         "max": "1",
         "patternCode": "Patient"
+      },
+      {
+        "id": "Questionnaire.date",
+        "path": "Questionnaire.date",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.publisher",
+        "path": "Questionnaire.publisher",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.contact",
+        "path": "Questionnaire.contact",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.description",
+        "path": "Questionnaire.description",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.useContext",
+        "path": "Questionnaire.useContext",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.jurisdiction",
+        "path": "Questionnaire.jurisdiction",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.purpose",
+        "path": "Questionnaire.purpose",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.copyright",
+        "path": "Questionnaire.copyright",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.approvalDate",
+        "path": "Questionnaire.approvalDate",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.lastReviewDate",
+        "path": "Questionnaire.lastReviewDate",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.effectivePeriod",
+        "path": "Questionnaire.effectivePeriod",
+        "max": "0"
+      },
+      {
+        "id": "Questionnaire.code",
+        "path": "Questionnaire.code",
+        "max": "0"
       },
       {
         "id": "Questionnaire.item",
